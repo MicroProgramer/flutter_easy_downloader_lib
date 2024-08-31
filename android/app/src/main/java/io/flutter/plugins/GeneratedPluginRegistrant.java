@@ -2,6 +2,7 @@ package io.flutter.plugins;
 
 import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
+
 import io.flutter.Log;
 
 import io.flutter.embedding.engine.FlutterEngine;
@@ -12,18 +13,29 @@ import io.flutter.embedding.engine.FlutterEngine;
  * plugins that support the Android platform.
  */
 @Keep
-public final class GeneratedPluginRegistrant {
-  private static final String TAG = "GeneratedPluginRegistrant";
-  public static void registerWith(@NonNull FlutterEngine flutterEngine) {
-    try {
-      flutterEngine.getPlugins().add(new com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin());
-    } catch (Exception e) {
-      Log.e(TAG, "Error registering plugin flutter_local_notifications, com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin", e);
+public final class GeneratedPluginRegistrant
+{
+    private static final String TAG = "GeneratedPluginRegistrant";
+
+    public static void registerWith(@NonNull FlutterEngine flutterEngine)
+    {
+        try
+        {
+            flutterEngine.getPlugins()
+                         .add(new com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin());
+        }
+        catch (Exception e)
+        {
+            Log.e(TAG, "Error registering plugin flutter_local_notifications, com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin", e);
+        }
+        try
+        {
+            flutterEngine.getPlugins()
+                         .add(new dev.isar.isar_flutter_libs.IsarFlutterLibsPlugin());
+        }
+        catch (Exception e)
+        {
+            Log.e(TAG, "Error registering plugin isar_flutter_libs, dev.isar.isar_flutter_libs.IsarFlutterLibsPlugin", e);
+        }
     }
-    try {
-      flutterEngine.getPlugins().add(new dev.isar.isar_flutter_libs.IsarFlutterLibsPlugin());
-    } catch (Exception e) {
-      Log.e(TAG, "Error registering plugin isar_flutter_libs, dev.isar.isar_flutter_libs.IsarFlutterLibsPlugin", e);
-    }
-  }
 }
