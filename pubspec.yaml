@@ -1,0 +1,19 @@
+name: flutter_easy_downloader_lib
+description: A library for flutter that provides an easy to use interface for downloading files to your device.
+version: 0.0.30
+
+environment:
+  sdk: '>=2.19.2 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  isar_flutter_libs: ^3.1.0+1
+  flutter_local_notifications: ^17.2.2
+  easy_downloader: ^0.0.30
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
